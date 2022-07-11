@@ -1,0 +1,14 @@
+<h2>Login</h2>
+<strong *ngIf="error">{{error}}</strong>
+<hr>
+<form>
+	<label>
+		<p>Username</p>
+		<input name="username" [(ngModel)]="username">
+	</label>
+	<label>
+		<p>Password</p>
+		<input name="password" type="password" [(ngModel)]="password">
+	</label>
+	<button class="btn primary" (click)="login()">Login</button>
+</form>

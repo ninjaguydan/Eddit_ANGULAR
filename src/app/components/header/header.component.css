@@ -1,0 +1,18 @@
+header {
+    background-color: var(--gray);
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+}

@@ -1,0 +1,26 @@
+<h2>Sign Up</h2>
+<strong *ngIf="error">{{error}}</strong>
+<hr>
+<form>
+	<label>
+		<p>Name</p>
+		<input name="name" [ngModel]="name" (ngModelChange)="onNameChange($event)">
+		<strong *ngIf="hasErrors.name">{{hasErrors.name}}</strong>
+	</label>
+	<label>
+		<p>Username</p>
+		<input name="username" [ngModel]="username" (ngModelChange)="onUsernameChange($event)">
+		<strong *ngIf="hasErrors.username">{{hasErrors.username}}</strong>
+	</label>
+	<label>
+		<p>Password</p>
+		<input name="password" type="password" [ngModel]="password" (ngModelChange)="onPwChange($event)">
+		<strong *ngIf="hasErrors.password">{{hasErrors.password}}</strong>
+	</label>
+	<label>
+		<p>Confirm Password</p>
+		<input name="confirm" type="password" [ngModel]="confirm" (ngModelChange)="onConfirmChange($event)">
+		<strong *ngIf="hasErrors.confirm">{{hasErrors.confirm}}</strong>
+	</label>
+	<button class="btn primary" [disabled]="!valid" (click)="register()">Register</button>
+</form>

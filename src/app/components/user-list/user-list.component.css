@@ -1,0 +1,26 @@
+button.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 250px;
+    color: white;
+}
+button.card:hover,
+button.card:focus{
+    outline: 1px solid var(--primary);
+}
+.card span.material-symbols-outlined {
+    font-size: 3rem;
+}
+.card span.material-symbols-outlined.current {
+    color: var(--primary)
+}
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+.card p {
+    color: var(--lighestgray);
+    text-align: left;
+}

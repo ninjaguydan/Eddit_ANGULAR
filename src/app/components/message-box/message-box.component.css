@@ -1,0 +1,37 @@
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #20262df0;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.msg-form{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: var(--gray);
+    box-shadow: 0 5px 5px black;
+}
+.card textarea, .card select {
+    background-color: unset;
+    border: 1px solid var(--lightgray);
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+.card select {
+    width: 100%;
+}
+textarea.error {
+    outline: 1px solid var(--error);
+}
+.btn-container {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}

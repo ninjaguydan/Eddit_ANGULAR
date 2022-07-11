@@ -1,0 +1,17 @@
+<div class="modal-bg">
+	<form class="msg-form card">
+		<h2>Message</h2>
+		<hr>
+		<label>
+			<p>To:</p>
+			<select name="for" [(ngModel)]="selectedValue">
+				<option *ngFor="let user of userList" [ngValue]="user.username">{{user.username}}</option>
+			</select>
+		</label>
+		<textarea rows="4" [(ngModel)]="content" name="content" [ngClass]="error ? 'error':''"></textarea>
+		<div class="btn-container">
+			<button class="btn primary" (click)="onSend()">Send</button>
+			<button class="btn secondary" (click)="onCancel()">Cancel</button>
+		</div>
+	</form>
+</div>

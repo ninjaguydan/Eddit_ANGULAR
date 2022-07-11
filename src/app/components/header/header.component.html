@@ -1,0 +1,10 @@
+<header>
+	<h1 class="logo">eddit</h1>
+	<nav *ngIf="currentUser">
+		<p>{{currentUser.username}}</p>
+		<button class="btn-icon" (click)="onMessage()">
+			<span class="material-symbols-outlined">forum</span>
+		</button>
+		<button class="btn secondary" (click)="logout()">Logout</button>
+	</nav>
+</header>

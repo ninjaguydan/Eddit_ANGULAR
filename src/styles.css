@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root {
+    --primary: #76eba2;
+    --black: #20262DFF;
+    --gray: #313a45;
+    --lightgray: #627083;
+    --lighestgray: #96a4b8;
+    --error: #ffa000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: 1px dotted magenta;*/
+}
+
+body {
+    background-color: var(--black);
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+button {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .25rem;
+    font-size: 1.125rem;
+    border-radius: .25rem;
+    border: unset;
+    font-family: inherit;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+label p {
+    margin-bottom: 0.25rem;
+}
+
+strong {
+    color: var(--error);
+    margin-top: .25rem;
+    display: block;
+}
+
+.btn {
+    padding: .5rem 1.25rem;
+    border-radius: .25rem;
+}
+.btn-icon {
+    color: white;
+}
+.btn-icon:hover {
+    color: var(--primary);
+}
+.btn-icon span {
+    top: 2px;
+    position: relative;
+}
+.primary {
+    background-color: var(--primary);
+}
+
+.primary:hover {
+    background-color: #69cf90;
+}
+
+.secondary {
+    background-color: var(--lightgray);
+    color: white;
+}
+
+.secondary:hover {
+    background-color: #535f6f;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.card {
+    padding: 1.5rem;
+    background-color: var(--gray);
+    width: 100%;
+    max-width: 500px;
+    border-radius: .25rem;
+    border: 1px solid #49505a;
+}

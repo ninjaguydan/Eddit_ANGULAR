@@ -1,0 +1,7 @@
+<button class="card" *ngFor="let user of userList" (click)="onClick(user.username)">
+	<span class="material-symbols-outlined {{currentUser.id === user.id ? 'current':''}}" >account_circle</span>
+	<div>
+		<h3>{{user.username}}</h3>
+		<p>{{user.name}}</p>
+	</div>
+</button>

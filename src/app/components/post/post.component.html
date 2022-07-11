@@ -1,0 +1,25 @@
+<div class="card">
+	<br *ngIf="POST.isEditing; then showForm; else showPost">
+	<ng-template #showPost>
+		<header>
+			<span class="material-symbols-outlined">account_circle</span>
+			<p>{{user.name}} <span>{{user.username}}</span></p>
+			<small>{{POST.created | date : 'MM/d/y, hh:mm a'}}</small>
+		</header>
+		<h3>{{POST.title}}</h3>
+		<p>{{POST.content}}</p>
+		<footer>
+			<button (click)="toggleComments()">Comment</button>
+			<button *ngIf="currentUser" (click)="openForm()">Edit</button>
+			<button *ngIf="currentUser" (click)="onDelete()">Delete</button>
+		</footer>
+		<app-comment-list *ngIf="commentsVisible" [POST]="POST.id"></app-comment-list>
+		<div class="comment-cnt">
+			<span class="material-symbols-outlined">chat_bubble</span>
+			<span>{{count}}</span>
+		</div>
+	</ng-template>
+	<ng-template #showForm>
+		<app-post-form [postToEdit]="POST" (closeForm)="closeForm()"></app-post-form>
+	</ng-template>
+</div>

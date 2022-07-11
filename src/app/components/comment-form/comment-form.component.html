@@ -1,0 +1,5 @@
+<form class="card {{commentToEdit ? 'editing':''}}">
+	<textarea rows="2" placeholder="What's on your mind?" name="content" [(ngModel)]="tempComment.content" [ngClass]="error ? 'error':''"></textarea>
+	<button class="btn primary" (click)="onAdd()">{{commentToEdit ? 'Save' : 'Reply' }}</button>
+	<button *ngIf="commentToEdit" class="btn secondary" (click)="onCancel()">Cancel</button>
+</form>

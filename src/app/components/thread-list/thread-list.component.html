@@ -1,0 +1,25 @@
+<div class="modal-bg">
+	<div class="inbox">
+		<div class="user-list">
+			<button *ngFor="let t of threadList" (click)="selectThread(t.id)" class="card"
+			        [ngClass]="t === selectedThread ? 'selected':''">
+				<h3>{{t.users}}</h3>
+			</button>
+		</div>
+		<div class="thread">
+			<h2>{{selectedThread.users}}</h2>
+			<div *ngFor="let message of selectedThread.messages"
+			     [ngClass]="message.sender === currentUser.username ? 'sent' : 'received' ">
+				<small>{{message.created | date: 'short'}}</small>
+				<p>{{message.content}}</p>
+			</div>
+			<div class="msg-box">
+				<textarea [(ngModel)]="content" [ngClass]="error ? 'error':''"></textarea>
+				<button class="btn primary" (click)="onSend()">Send</button>
+			</div>
+		</div>
+		<button class="cancel" (click)="onCancel()">
+			<span class="material-symbols-outlined">cancel</span>
+		</button>
+	</div>
+</div>

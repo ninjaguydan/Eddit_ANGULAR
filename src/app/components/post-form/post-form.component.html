@@ -1,0 +1,6 @@
+<form class="card {{postToEdit ? 'editing':''}}">
+	<input placeholder="Title" name="title" [(ngModel)]="tempPost.title" [ngClass]="error ? 'error':''">
+	<textarea rows="3" placeholder="Text (optional)" name="content" [(ngModel)]="tempPost.content"></textarea>
+	<button class="btn primary" (click)="onAdd()">{{postToEdit ? 'Save' : 'Post' }}</button>
+	<button *ngIf="postToEdit" class="btn secondary" (click)="onCancel()">Cancel</button>
+</form>

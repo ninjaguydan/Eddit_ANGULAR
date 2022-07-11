@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: .5rem;
+}
+header p span {
+    color: var(--lighestgray);
+}
+header small {
+    position: relative;
+    top: 2px;
+    font-weight: 100;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+.card {
+    max-width: 700px;
+    position: relative;
+}
+footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+footer button {
+    color: var(--lighestgray);
+}
+footer button:hover {
+    color: var(--primary);
+}
+.comment-cnt {
+    color: var(--lighestgray);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+.comment-cnt .material-symbols-outlined {
+    font-size: 20px;
+}
+app-comment-list {
+    margin-top: 1.5rem;
+    display: block;
+}

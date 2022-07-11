@@ -1,0 +1,18 @@
+<div class="card">
+	<br *ngIf="COMMENT.isEditing; then showForm; else showComment">
+	<ng-template #showComment>
+		<header>
+			<span class="material-symbols-outlined">account_circle</span>
+			<p>{{user.name}} <span>{{user.username}}</span></p>
+			<small>{{COMMENT.created | date : 'MM/d/y, hh:mm a'}}</small>
+		</header>
+		<p>{{COMMENT.content}}</p>
+		<footer *ngIf="currentUser">
+			<button (click)="openForm()">Edit</button>
+			<button (click)="onDelete()">Delete</button>
+		</footer>
+	</ng-template>
+	<ng-template #showForm>
+		<app-comment-form [commentToEdit]="COMMENT" (closeForm)="closeForm()"></app-comment-form>
+	</ng-template>
+</div>

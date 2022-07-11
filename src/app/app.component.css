@@ -1,0 +1,10 @@
+main {
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+app-message-box, app-thread-list {
+    position: absolute;
+}

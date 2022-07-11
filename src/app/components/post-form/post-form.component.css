@@ -1,0 +1,25 @@
+form.card {
+    max-width: 700px;
+}
+.card textarea, .card input {
+    background-color: unset;
+    border: 1px solid var(--lightgray);
+    padding: 0.75rem;
+    color: white;
+    font-size: 1rem;
+}
+.card textarea, button {
+    margin-top: 1rem;
+}
+button {
+    margin-left: auto;
+    display: inline-block;
+    margin-right: .5rem;
+}
+form.card.editing {
+    border: unset;
+    padding: 0;
+}
+input.error {
+    outline: 1px solid var(--error);
+}
