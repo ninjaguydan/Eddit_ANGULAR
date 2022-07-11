@@ -29,6 +29,9 @@ export class AppComponent implements OnDestroy {
 		this.msgBoxVisible = false
 	}
 	toggleInbox(){
+		if (this.dataService.threads.filter((t) => t.users.includes(this.dataService.currentUser!.username)).length === 0){
+			return
+		}
 		this.inboxVisible = !this.inboxVisible
 	}
 

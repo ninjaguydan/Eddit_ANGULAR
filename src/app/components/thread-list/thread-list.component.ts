@@ -14,7 +14,7 @@ export class ThreadListComponent implements OnDestroy {
 	currentUser!:IUser
 	selectedThread!:IThread
 	threadList:Array<IThread> = []
-	threadListSUB:Subscription
+	threadListSUB!:Subscription
 	content:string = ''
 	error:boolean = false
 
@@ -41,6 +41,7 @@ export class ThreadListComponent implements OnDestroy {
 			this.selectThread(this.selectedThread.id)
 		})
 	}
+
 	ngOnDestroy() {
 		this.threadListSUB.unsubscribe()
 	}

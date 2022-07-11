@@ -51,6 +51,7 @@ export class RegistrationComponent implements OnInit {
 		} else {
 			delete this.hasErrors["password"]
 		}
+		this.onConfirmChange(this.confirm)
 		this.valid = Object.keys(this.hasErrors).length === 0
 	}
 	onConfirmChange(value:string):void {

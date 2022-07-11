@@ -36,7 +36,7 @@ export class DataService {
 		{
 			id: '111',
 			title: 'This game sucks',
-			content: 'Wy does this boss have so much health? Why i every hit an AOE? Who designed this shit??',
+			content: 'Why does this boss have so much health? Why is every hit an AOE? Who designed this shit??',
 			created: new Date('2022-07-09 08:21'),
 			user: '1',
 			isEditing: false
