@@ -3,8 +3,8 @@
 	<ng-template #showComment>
 		<header>
 			<span class="material-symbols-outlined">account_circle</span>
-			<p>{{user.name}} <span>{{user.username}}</span></p>
-			<small>{{COMMENT.created | date : 'MM/d/y, hh:mm a'}}</small>
+			<p>{{user.name}} <span>@{{user.username}}</span></p>
+			<small>{{COMMENT.created | timeSince }}</small>
 		</header>
 		<p>{{COMMENT.content}}</p>
 		<footer *ngIf="currentUser">

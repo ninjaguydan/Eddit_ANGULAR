@@ -179,6 +179,7 @@ export class DataService {
 			{
 				...post,
 				id: uuid(),
+				created: new Date(),
 				user: this.currentUser!.id
 			},
 			...this.postList
@@ -207,6 +208,7 @@ export class DataService {
 			{
 				...comment,
 				id: uuid(),
+				created: new Date(),
 				user: this.currentUser!.id
 			}
 		]

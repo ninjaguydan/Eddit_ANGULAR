@@ -15,6 +15,7 @@ import { PostFormComponent } from './components/post-form/post-form.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { MessageBoxComponent } from './components/message-box/message-box.component';
 import { ThreadListComponent } from './components/thread-list/thread-list.component';
+import { TimeSincePipe } from './pipes/time-since.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ThreadListComponent } from './components/thread-list/thread-list.compon
     CommentFormComponent,
     MessageBoxComponent,
     ThreadListComponent,
+    TimeSincePipe,
   ],
   imports: [
     BrowserModule,

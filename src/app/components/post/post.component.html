@@ -3,8 +3,8 @@
 	<ng-template #showPost>
 		<header>
 			<span class="material-symbols-outlined">account_circle</span>
-			<p>{{user.name}} <span>{{user.username}}</span></p>
-			<small>{{POST.created | date : 'MM/d/y, hh:mm a'}}</small>
+			<p>{{user.name}} <span>@{{user.username}}</span></p>
+			<small>{{POST.created | timeSince}}</small>
 		</header>
 		<h3>{{POST.title}}</h3>
 		<p>{{POST.content}}</p>
