@@ -27,8 +27,8 @@ export class DataService {
 		},
 		{
 			id: '3',
-			name: 'Jeremiah',
-			username: 'jmattstayfat',
+			name: 'Josiah',
+			username: 'josiV',
 			password: 'pass'
 		},
 	]
@@ -38,7 +38,7 @@ export class DataService {
 			title: 'This game sucks',
 			content: 'Why does this boss have so much health? Why is every hit an AOE? Who designed this shit??',
 			created: new Date('2022-07-09 08:21'),
-			user: '1',
+			user: '3',
 			isEditing: false
 		},
 		{
@@ -98,25 +98,25 @@ export class DataService {
 	threads:Array<IThread> = [
 		{
 			id: '1',
-			users: ['jmattstayfat', 'danboy'],
+			users: ['josiV', 'danboy'],
 			messages: [
 				{
-					sender: 'jmattstayfat',
+					sender: 'josiV',
 					receiver: 'danboy',
 					content: 'This app is garbage',
-					created: new Date('2022-06-22 00:00')
+					created: new Date('2022-07-12 08:32')
 				},
 				{
 					sender: 'danboy',
-					receiver: 'jmattstayfat',
-					content: 'Right? I\'m such a shit developer',
-					created: new Date('2022-06-22 00:00')
+					receiver: 'josiV',
+					content: 'Come on bro be nice',
+					created: new Date('2022-07-12 08:45')
 				},
 				{
-					sender: 'jmattstayfat',
+					sender: 'josiV',
 					receiver: 'danboy',
-					content: 'No way you\'ll get a job',
-					created: new Date('2022-06-22 00:00')
+					content: 'No',
+					created: new Date('2022-07-12 10:02')
 				},
 			]
 		},

@@ -4,7 +4,23 @@ main {
     align-items: start;
     justify-content: center;
     gap: 2rem;
+    flex-direction: column-reverse;
 }
 app-message-box, app-thread-list {
     position: absolute;
+}
+app-user-list {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    overflow: auto;
+}
+@media only screen and (min-width: 830px) {
+    main {
+        flex-direction: row;
+    }
+    app-user-list {
+        flex-direction: column;
+        width: unset;
+    }
 }

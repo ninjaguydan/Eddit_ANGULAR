@@ -28,8 +28,8 @@ export class RegistrationComponent implements OnInit {
 		this.name = value
 		if (!value || value.length < 2) {
 			this.hasErrors["name"] = "Name must be at least 2 characters"
-		} else if ( value.length > 10 ) {
-			this.hasErrors["name"] = "Name can't be more than 10 characters"
+		} else if ( value.length > 20 ) {
+			this.hasErrors["name"] = "Name can't be more than 20 characters"
 		} else {
 			delete this.hasErrors["name"]
 		}
@@ -37,8 +37,8 @@ export class RegistrationComponent implements OnInit {
 	}
 	onUsernameChange(value:string):void {
 		this.username = value
-		if (!value || value.length < 5) {
-			this.hasErrors["username"] = "Username must be at least 5 characters"
+		if (!value || value.length < 3) {
+			this.hasErrors["username"] = "Username must be at least 3 characters"
 		} else {
 			delete this.hasErrors["username"]
 		}
@@ -46,8 +46,8 @@ export class RegistrationComponent implements OnInit {
 	}
 	onPwChange(value:string):void {
 		this.password = value
-		if (!value || value.length < 8) {
-			this.hasErrors["password"] = "Password must be at least 8 characters"
+		if (!value || value.length < 4) {
+			this.hasErrors["password"] = "Password must be at least 4 characters"
 		} else {
 			delete this.hasErrors["password"]
 		}
