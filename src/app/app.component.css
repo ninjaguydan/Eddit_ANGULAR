@@ -22,5 +22,6 @@ app-user-list {
     app-user-list {
         flex-direction: column;
         width: unset;
+        overflow: unset;
     }
 }
