@@ -15,8 +15,8 @@ export class DataService {
 	userList: Array<IUser> = [
 		{
 			id: '1',
-			name: 'Daniel',
-			username: 'danboy',
+			name: 'Admin',
+			username: 'admin00',
 			password: 'pass'
 		},
 		{
@@ -98,23 +98,23 @@ export class DataService {
 	threads:Array<IThread> = [
 		{
 			id: '1',
-			users: ['josiV', 'danboy'],
+			users: ['josiV', 'admin00'],
 			messages: [
 				{
 					sender: 'josiV',
-					receiver: 'danboy',
+					receiver: 'admin00',
 					content: 'This app is garbage',
 					created: new Date('2022-07-12 08:32')
 				},
 				{
-					sender: 'danboy',
+					sender: 'admin00',
 					receiver: 'josiV',
 					content: 'Come on bro be nice',
 					created: new Date('2022-07-12 08:45')
 				},
 				{
 					sender: 'josiV',
-					receiver: 'danboy',
+					receiver: 'admin00',
 					content: 'No',
 					created: new Date('2022-07-12 10:02')
 				},
@@ -122,22 +122,22 @@ export class DataService {
 		},
 		{
 			id: '2',
-			users: ['danboy', 'longjonsilver'],
+			users: ['admin00', 'longjonsilver'],
 			messages: [
 				{
-					sender: 'danboy',
+					sender: 'admin00',
 					receiver: 'longjonsilver',
 					content: 'yo yo yo',
 					created: new Date('2022-06-22 00:00')
 				},
 				{
 					sender: 'longjonsilver',
-					receiver: 'danboy',
+					receiver: 'admin00',
 					content: 'whatup brodie',
 					created: new Date('2022-06-22 00:00')
 				},
 				{
-					sender: 'danboy',
+					sender: 'admin00',
 					receiver: 'longjonsilver',
 					content: 'you a bitch',
 					created: new Date('2022-06-22 00:00')

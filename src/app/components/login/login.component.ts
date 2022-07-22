@@ -7,8 +7,8 @@ import {DataService} from "../../services/data.service";
 	styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-	username:string = ''
-	password:string = ''
+	username:string = 'admin00'
+	password:string = 'pass'
 	error:string|void = ''
 
 	constructor(private dataService:DataService) { }

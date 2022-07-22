@@ -15,11 +15,11 @@
 			</div>
 			<div class="msg-box">
 				<textarea [(ngModel)]="content" [ngClass]="error ? 'error':''"></textarea>
-				<button class="btn primary" (click)="onSend()">Send</button>
+				<div class="btn-container">
+					<button class="btn primary" (click)="onSend()">Send</button>
+					<button class="btn secondary" (click)="onCancel()">Cancel</button>
+				</div>
 			</div>
 		</div>
-		<button class="cancel" (click)="onCancel()">
-			<span class="material-symbols-outlined">cancel</span>
-		</button>
 	</div>
 </div>
