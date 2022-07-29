@@ -109,6 +109,7 @@
     }
     .user-list {
         flex-direction: column;
+        //
     }
     .thread {
         height: 70vh;
